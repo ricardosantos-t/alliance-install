@@ -57,3 +57,8 @@ Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para ini
 ```markdown
 > node server --run
 ```
+
+- Cria o banco de dados da aplicação
+```markdown
+> node server --createdb
+```
