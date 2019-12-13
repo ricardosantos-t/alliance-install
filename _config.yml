@@ -1,3 +1,4 @@
 theme: jekyll-theme-leap-day
 title: WTT Alliance - Install
 description: Área exclusiva para os instaladores
+show_downloads: true
