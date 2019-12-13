@@ -18,12 +18,10 @@ Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para ini
 ### Downloads
 1. WTT Alliance - Lite Image v0.5 [Link]
 
-| Histórico        | Download          | three |
-|:-------------|:------------------|:------|
-| 0.5.1           | http://google.com.br | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+| Histórico        | Download          |
+|:-------------|:------------------|
+| 0.5.1           | http://google.com.br |
+| out of stock | good and plenty   |
 
 
 ```markdown
