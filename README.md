@@ -31,7 +31,7 @@ Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para ini
 5. Repita o passo 4 para certificar-se de que o NodeJS esteja realmente pronto para ser usado.
 6. Ainda na pasta extraída no passo 2, execute o comando `> node server --install` um serviço (WTT Alliance - Lite Image v0.5) será instalado no windows e iniciado.
 
-
+### Comandos Suportados
 ```markdown
-Testando...
+> node server --install `Instala o serviço no windows`
 ```
