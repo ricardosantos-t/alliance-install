@@ -7,13 +7,16 @@ Essa página tem por objetivo, descrever os pré-requisitos e apoiar no processo
 - Memória: 8GB ou superior
 - HD: 100GB ou superior
 
-**Importante:** Caso o sistema deva funcionar no mesmo equipamento do DServer, atente-se aos pré-requisitos do DServer.
+**Importante:** _Caso o sistema deva funcionar no mesmo equipamento do DServer, atente-se aos pré-requisitos do DServer._
 
 ### Pré-Requisitos (software)
 - Banco de dados PostgreSQL
 - Instalação do módulo DServer
 
 Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para iniciar o processo de instalação do módulo “WTT Alliance - Lite Image v0.5”.
+
+#### Downloads
+* WTT Alliance - Lite Image v0.5 [Link]
 
 ```markdown
 Syntax highlighted code block
