@@ -62,3 +62,8 @@ Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para ini
 ```markdown
 > node server --createdb
 ```
+
+- Abre aplicação no browser
+```markdown
+> node server --open
+```
