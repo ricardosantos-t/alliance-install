@@ -28,9 +28,9 @@ Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para ini
 4. Execute o comando: `> node -v` se a versão do nodejs não for exibida, significa que o NodeJS ainda não foi instalado, então baixe ele [aqui](https://nodejs.org/dist/v12.13.1/node-v12.13.1-x64.msi) e prossiga com a instalação do NodeJS.
 5. Repita o passo 4 para certificar-se de que o NodeJS esteja realmente pronto para ser usado.
 6. Ainda na pasta extraída no passo 2, edite o arquivo **configuration.json**, aqui você poderá modificar a porta de execução e conexões com banco de dados da aplicação e dserver, altere os valores conforme o necessário, salve e feche o arquivo.
-8. 7. Ainda na pasta extraída, execute o comando `> node server --createdb` será 
-7. Ainda na pasta extraída, execute o comando `> node server --install` um serviço (WTT Alliance - Lite Image v0.5) será instalado no windows, iniciado e uma página de configuração será exibida.
-8. Na página de configuração, atente-se para os parâmetros de porta da aplicação e conexão com banco de dados.
+7. Ainda na pasta extraída, execute o comando `> node server --createdb` será criado o banco de dados da aplicação.
+8. Ainda na pasta extraída, execute o comando `> node server --install` um serviço (WTT Alliance - Lite Image v0.5) será instalado no windows, iniciado e uma página de configuração será exibida.
+9. Na página de configuração, atente-se para os parâmetros de porta da aplicação e conexão com banco de dados.
 
 ### Comandos Suportados
 - Instala o serviço no windows
