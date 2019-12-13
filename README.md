@@ -1,12 +1,19 @@
-## Welcome to GitHub Pages
+## Bem vindo(a) a nossa área de downloads
 
-You can use the [editor on GitHub](https://github.com/WTT-TECNOLOGIA/alliance-install/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Essa página tem por objetivo, descrever os pré-requisitos e apoiar no processo de instalação do módulo **WTT Alliance - Lite Image v0.5**.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Pré-Requisitos (mínimo de hardware)
+- SO: Windows 7 PRO ou superior
+- Memória: 8GB ou superior
+- HD: 100GB ou superior
 
-### Markdown
+**Importante:** Caso o sistema deva funcionar no mesmo equipamento do DServer, atente-se aos pré-requisitos do DServer.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Pré-Requisitos (software)
+- Banco de dados PostgreSQL
+- Instalação do módulo DServer
+
+Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para iniciar o processo de instalação do módulo “WTT Alliance - Lite Image v0.5”.
 
 ```markdown
 Syntax highlighted code block
