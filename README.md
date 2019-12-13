@@ -15,8 +15,13 @@ Essa página tem por objetivo, descrever os pré-requisitos e apoiar no processo
 
 Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para iniciar o processo de instalação do módulo “WTT Alliance - Lite Image v0.5”.
 
-### Downloads:
+### Downloads
 1. WTT Alliance - Lite Image v0.5 [Link]
+
+| Versões      | Download        |
+|:-------------|:------------------|
+| 0.5.1        | http://google.com.br |
+
 
 ```markdown
 Syntax highlighted code block
