@@ -19,7 +19,7 @@ Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para ini
 1. WTT Alliance - Lite Image v0.5 [Link]
 
 | Versões      | Download        |
-|:-------------|:------------------|
+|:-------------|:------------------|:
 | 0.5.1        | http://google.com.br |
 
 
