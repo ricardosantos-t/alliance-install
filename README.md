@@ -11,7 +11,7 @@ Essa página tem por objetivo, descrever os pré-requisitos e apoiar no processo
 - _Caso o sistema deva funcionar no mesmo equipamento do DServer, atente-se aos pré-requisitos do DServer._
 
 ### Pré-Requisitos (software)
-- NodeJS v10 ou superior (https://nodejs.org/dist/v12.13.1/node-v12.13.1-x64.msi)
+- NodeJS v10 ou superior
 - Banco de dados PostgreSQL 9.4+
 - Instalação do módulo DServer
 
@@ -27,7 +27,7 @@ Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para ini
 1. Faça o download da versão mais recente (preferencialmente partial).
 2. Extraia o arquivo no HD que possui maior espaço (recomendamos D:\WTT\Alliance\lite-image).
 3. Entre na pasta extraída através do **prompt de comando (modo administador)**.
-4. Execute o comando: 
+4. Execute o comando: `> node -v` se a versão do nodejs não for exibida, significa que o NodeJS ainda não foi instalado, então baixe aqui [aqui](https://nodejs.org/dist/v12.13.1/node-v12.13.1-x64.msi) e prossiga com a instalação do NodeJS.
 
 
 ```markdown
