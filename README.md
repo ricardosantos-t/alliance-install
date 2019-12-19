@@ -14,7 +14,7 @@ Essa página tem por objetivo, descrever os pré-requisitos e apoiar no processo
 - NodeJS v10 ou superior
 - Banco de dados PostgreSQL 9.4+
 - Instalação do módulo DServer
-- Instalação do módulo DSWeb (manual)
+- Instalação do módulo DSWeb - - [Manual](https://wtt-tecnologia.github.io/alliance-install/dsweb)
 - [Baixar pré-requisitos](https://s3-sa-east-1.amazonaws.com/wtt-lite-image-0.5/pre-install.zip)
 
 Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para iniciar o processo de instalação do módulo “WTT Alliance - Lite Image v0.5”.
