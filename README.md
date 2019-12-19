@@ -2,7 +2,7 @@
 
 Essa página tem por objetivo, descrever os pré-requisitos e apoiar no processo de instalação do módulo **WTT Alliance - Lite Image v0.5**.
 
-[Documentação:](https://wtt-tecnologia.github.io/alliance-install/)
+- Documentação: [Alliance-Install](https://wtt-tecnologia.github.io/alliance-install/)
 
 ### Pré-Requisitos (mínimo de hardware)
 - SO: Windows 7 PRO ou superior
