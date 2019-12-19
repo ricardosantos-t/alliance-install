@@ -2,7 +2,9 @@
 
 Essa página tem por objetivo, descrever o processo de instalação e configuração do módulo DSWEB.
 
-### Pré-Requisitos (software) | [Baixar Pacote](https://s3-sa-east-1.amazonaws.com/wtt-lite-image-0.5/pre-install.zip) | [Lite-Image](https://wtt-tecnologia.github.io/alliance-install/)
+Documentação: [Lite-Image](https://wtt-tecnologia.github.io/alliance-install/)
+
+### Pré-Requisitos (software) | [Baixar Pacote](https://s3-sa-east-1.amazonaws.com/wtt-lite-image-0.5/pre-install.zip)
 - Instalação do módulo DServer
 - Microsoft IIS
 
