@@ -19,9 +19,7 @@ Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para ini
 
 | Versões | Descrição | Download | Releases
 |:-------------|:------------------|:----------------|:----------------|
-| 0.5.2 - Full | Não requer internet | [Baixar](https://github.com/WTT-TECNOLOGIA/alliance-install/blob/master/wtt-alliance-lite-image-v0.5.2.zip) | .... |
 | 0.5.2 - Partial | Requer internet (recomendado) | [Baixar](https://github.com/WTT-TECNOLOGIA/alliance-install/blob/master/wtt-alliance-lite-image-v0.5.2.zip) | .... |
-| 0.5.1 - Full | Não requer internet | [Baixar](https://github.com/WTT-TECNOLOGIA/alliance-install/raw/master/wtt-alliance-lite-image-v0.5.1.zip) | .... |
 | 0.5.1 - Partial | Requer internet (recomendado) | [Baixar](https://github.com/WTT-TECNOLOGIA/alliance-install/raw/master/wtt-alliance-lite-image-v0.5.1.zip) | .... |
 
 1. Faça o download da versão mais recente (preferencialmente partial).
