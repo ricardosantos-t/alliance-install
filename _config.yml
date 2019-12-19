@@ -1,4 +1,8 @@
 theme: jekyll-theme-leap-day
 title: WTT Alliance - Install
+baseURL: "https://wtt-tecnologia.github.io/alliance-install/"
 description: Área exclusiva para os instaladores
 show_downloads: false
+
+params:
+  description: "Alliance - Área de Downloads"
