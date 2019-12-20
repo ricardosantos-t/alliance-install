@@ -19,15 +19,15 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 
 <details><summary> Instalação do PostgreSQL 9.4+ </summary>
 <h5 style="margin-left: 30px;"> Download PostgreSQL 9.4! </h5>
-
+<p>
 <ol>
 <li> No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.</li>
 <li> Install postgres, remove flag "launch stack Builder at exit?"</li>
 <li> Criar banco de dados</li>
  <li>  Criar table space com nome WTTDSERVER, apontando para o diretório DB do dserver ex. C:\WTT\dserver\Db</li>
  <li>  Criar Database com nome WTTDSERVER</li>
-
 </ol>
+</p>
 </details>
 
 
