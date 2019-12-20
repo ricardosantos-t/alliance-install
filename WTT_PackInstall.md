@@ -17,105 +17,83 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 ### Instalação e configuração dos Pré-Requisitos (software) 
 
 
-<details><summary> Instalação do PostgreSQL 9.4+ </summary> <p>
-<h5 style="margin-left: 30px;"> Download PostgreSQL 9.4! </h5>
-<ol>
-<li> No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.</li>
-<li> Install postgres, remove flag "launch stack Builder at exit?"</li>
-<li> Criar banco de dados</li>
- <li>  Criar table space com nome WTTDSERVER, apontando para o diretório DB do dserver ex. C:\WTT\dserver\Db</li>
- <li>  Criar Database com nome WTTDSERVER</li>
-</ol>
-</p>
+<details><summary> Instalação do PostgreSQL 9.4+ </summary>
+	<p>
+	 <h5 style="margin-left: 30px;">Download PostgreSQL 9.4</h5>
+		<ol>
+			<li> No arquivo baixado acima, encontra-se o instalador, manual de instalação e configuração.</li>
+			<li> Install postgres, remove flag "launch stack Builder at exit?"</li>
+			<li> Criar banco de dados</li>
+			 <li>  Criar table space com nome WTTDSERVER, apontando para o diretório DB do dserver ex. C:\WTT\dserver\Db</li>
+			 <li>  Criar Database com nome WTTDSERVER</li>
+		</ol>
+	</p>
 </details>
 
 
-<details><summary> Instalação do ODBC </summary>
-<h3>
-#### Download ODBC!
-	</h3>
-<p>
-```python
-No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.```
-Efetue a instalação do ODBC.```
-Configure ODBC, adicionando Postgres ANSI e configurando conexão com Dserver.
-```
 
-</p>
+<details><summary> Instalação do ODBC </summary>
+	<p>
+	 <h5 style="margin-left: 30px;">Download ODBC</h5>
+		<ol>
+			<li> No arquivo baixado acima, encontra-se o instalador, manual de instalação e configuração.</li>
+			<li> Efetue a instalação do ODBC.</li>
+			<li> Configure ODBC, adicionando Postgres ANSI e configurando conexão com Dserver</li>
+		</ol>
+	</p>
 </details>
 
 
 
 <details><summary> Instalação do módulo D-Server </summary>
-<p>
-
-
-#### Download D-Server!
-
-```python
-	1. No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.
-	2. Criar pasta "WTT" na raiz do diretório desejado.
-	3. Copiar pasta dserver para dentro da pasta WTT, criada anteriormente.
-	4. Configurar dserver
-	 - Instalar o serviço do dserver
-	 - Ativar Dserver
-	 - Cria pastar "C:\WTT\storage\dcmimport"
-	 - Marcar flag "habilitar importação de arquivos dicom"
-```
-
-</p>
+	<p>
+	 <h5 style="margin-left: 30px;">Download D-Server</h5>
+		<ol>
+			<li> No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.</li>
+			<li> Criar pasta "WTT" na raiz do diretório desejado.</li>
+			<li> Copiar pasta dserver para dentro da pasta WTT, criada anteriormente.</li>
+			<li> Configurar dserver.</li>
+			<li> Instalar o serviço do dserver.</li>
+			<li> Ativar Dserver.</li>
+			<li> Cria pastar "C:\WTT\storage\dcmimport"</li>
+			<li> Marcar flag "habilitar importação de arquivos dicom".</li>
+		</ol>
+	</p>
 </details>
 
 
 
 <details><summary> Instalação do módulo DSWeb </summary>
-<p>
-
-#### Download DSWeb!
-
-```python
-	1. No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.
-	1. Ativar IIS 
-	2. Instalar urlrewrite2.exe (**Download [])
-	3. Configurar IIS
-	 	3.1. na raiz (primeiro item da coluna esquerda), seleciona Restrições ISAPI e CGI e clica em Editar configurações de recurso 	e marca a opção: Permitir módulos CGI não especificado.
-
-	 	3.2. Mapeamentos de manipulador (seleciona CGI > botão direito, seleciona Editar Permissões de Recurso > Marcar opção executar )
-	 	
-	 	3.3. Default Web Site ( adicionar novo diretório virtual > Alias: STORAGE, Caminho fisico "c:\WTT\storage"´> conectar como: selecionar usuário WTTService  )
-
-	 	3.4. Default Web Site ( adicionar novo diretório virtual > Alias: dsweb, Caminho fisico "c:\WTT\Dserver\Web"´> conectar como: selecionar usuário WTTService  )
-
-		3.5. Default Web Site > dsweb ( URL Rewrite . Add Rules > Blank Rule > name: dsweb.exe | Pattern: .* | conditions: selecona lista em logical Grouping: Match Any, clica em ADD, check if ainput string: Is Not a File, confirma | em 		Rewrite URL informa o valor: dsweb.exe/{R:0} | Aplicar  )
-
-	 	3.6. Teste: http://127.0.0.1/dsweb/version (Deve apresentar a versão do dsweb)
-
-	 	3.7. Default Web Site > Storage ( selecionar Tipos de MIME e adicionar extenção .data (binary/dat), .dcm (binary/dcm) )
-
-	    3.8. Rodar script headers.cmd com permissão de ADM 
-```
-
-</p>
+	<p>
+	 <h5 style="margin-left: 30px;"> Download DSWeb </h5>
+		<ol>
+			<li> No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração. </li>
+			<li> Ativar IIS. </li>
+			<li> Instalar urlrewrite2.exe. </li>
+			<li> Configurar IIS. </li>
+			<li> Na raiz (primeiro item da coluna esquerda), seleciona Restrições ISAPI e CGI e clica em Editar configurações de recurso 	e marca a opção: Permitir módulos CGI não especificado. </li>
+			<li> Mapeamentos de manipulador (seleciona CGI > botão direito, seleciona Editar Permissões de Recurso > Marcar opção executar ) </li>
+			<li> Default Web Site ( adicionar novo diretório virtual > Alias: STORAGE, Caminho fisico "c:\WTT\storage"´> conectar como: selecionar usuário WTTService  ) </li>
+			<li> Default Web Site ( adicionar novo diretório virtual > Alias: dsweb, Caminho fisico "c:\WTT\Dserver\Web"´> conectar como: selecionar usuário WTTService  ) </li>
+			<li> efault Web Site > dsweb ( URL Rewrite . Add Rules > Blank Rule > name: dsweb.exe | Pattern: .* | conditions: selecona lista em logical Grouping: Match Any, clica em ADD, check if ainput string: Is Not a File, confirma | em 		Rewrite URL informa o valor: dsweb.exe/{R:0} | Aplicar  ) </li>
+			<li> Teste: http://127.0.0.1/dsweb/version (Deve apresentar a versão do dsweb) </li>
+			<li> Default Web Site > Storage ( selecionar Tipos de MIME e adicionar extenção .data (binary/dat), .dcm (binary/dcm) ) </li>
+			<li> Rodar script headers.cmd com permissão de ADM </li>
+		</ol>
+	</p>
 </details>
+
 
 
 <details><summary> Instalação do NodeJS v10+ </summary>
-<p>
-
-#### Download NodeJS v10+!
-
-```python
-	1. No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.
-	2. Executar o instalado em modo ADM
-
-```
-
-</p>
+	<p>
+	 <h5 style="margin-left: 30px;"> Download NodeJS v10+ </h5>
+		<ol>
+			<li> No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração. </li>
+			<li> Executar o instalado em modo ADM. </li>
+		</ol>
+	</p>
 </details>
-
-
-
-<p></p>
 
 
 ### Instalação e configuração do WTT Alliance - Lite Image
@@ -141,6 +119,8 @@ Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para ini
 - NetworkID da instituição - alterar diretamente na tabela "ali_sites".
 - URL de apontamento para o DSWEB - Disponível em configurações do site, refletindo na tabela "ali_site_configurations".
 - Definir data de início da importação (importante) - Disponível em configurações do site, refletindo na tabela "ali_site_configurations".
+
+
 
 ### Comandos Suportados
 - Instala o serviço no windows
