@@ -13,28 +13,16 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 - _Caso o sistema deva funcionar no mesmo equipamento do DServer, atente-se aos pré-requisitos do DServer._
 
 
-## teste testes?
-
-<details><summary>teste testesCLICK ME</summary>
-<p>
-
-#### teste testes!
-
-```python
-print("hello world!")
-```
-
-</p>
-</details>
 
 ### Instalação e configuração dos Pré-Requisitos (software) 
 
 
 <details><summary> Instalação do PostgreSQL 9.4+ </summary>
-<p>
-	
+<h3>	
 #### Download PostgreSQL 9.4!
+</h3>
 
+<h5>
 ```python
 No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.
 Install postgres, remove flag "launch stack Builder at exit?"
@@ -42,15 +30,15 @@ Criar banco de dados
 Criar table space com nome WTTDSERVER, apontando para o diretório DB do dserver ex. C:\WTT\dserver\Db
 Criar Database com nome WTTDSERVER
 ```
-</p>
+</h5>
 </details>
 
 
 <details><summary> Instalação do ODBC </summary>
-<p>
-
+<h3>
 #### Download ODBC!
-
+	</h3>
+<p>
 ```python
 No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.```
 Efetue a instalação do ODBC.```
