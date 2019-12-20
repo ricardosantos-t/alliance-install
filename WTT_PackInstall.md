@@ -18,30 +18,30 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 
 
 <details><summary> Instalação do PostgreSQL 9.4+ </summary>
-<p>
 
 #### Download PostgreSQL 9.4!
 
+```python
 1. No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.
 2. Install postgres, remove flag "launch stack Builder at exit?"
 3. Criar banco de dados 
 - Criar table space com nome WTTDSERVER, apontando para o diretório DB do dserver ex. C:\WTT\dserver\Db
 - Criar Database com nome WTTDSERVER
+```
 
-</p>
 </details>
 
 
 
 <details><summary> Instalação do ODBC </summary>
 <p>
-
+	
 #### Download ODBC!
 
-1. No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.
-2. Efetue a instalação do ODBC.
-3. Configure ODBC, adicionando Postgres ANSI e configurando conexão com Dserver.
-
+here```1. No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.```
+here```2. Efetue a instalação do ODBC.```
+here```3. Configure ODBC, adicionando Postgres ANSI e configurando conexão com Dserver.
+```
 </p>
 </details>
 
