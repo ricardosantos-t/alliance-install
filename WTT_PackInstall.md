@@ -13,6 +13,19 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 - _Caso o sistema deva funcionar no mesmo equipamento do DServer, atente-se aos pré-requisitos do DServer._
 
 
+## teste testes?
+
+<details><summary>teste testesCLICK ME</summary>
+<p>
+
+#### teste testes!
+
+```python
+print("hello world!")
+```
+
+</p>
+</details>
 
 ### Instalação e configuração dos Pré-Requisitos (software) 
 
