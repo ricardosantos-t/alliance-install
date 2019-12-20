@@ -96,6 +96,9 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 </details>
 
 
+
+_ _
+
 ### Instalação e configuração do WTT Alliance - Lite Image
 
 
@@ -121,7 +124,7 @@ Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para ini
 - Definir data de início da importação (importante) - Disponível em configurações do site, refletindo na tabela "ali_site_configurations".
 
 
-
+_ _
 ### Comandos Suportados
 - Instala o serviço no windows
 ```markdown
