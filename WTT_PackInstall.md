@@ -20,7 +20,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 <details><summary> Instalação do PostgreSQL 9.4+ </summary>
 <p>
 
-####  Download PostgreSQL 9.4 
+#### Download PostgreSQL 9.4!
 
 ```python
 	1. No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.
@@ -39,7 +39,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 <details><summary> Instalação do ODBC </summary>
 <p>
 
-####  Download ODBC 
+#### Download ODBC!
 
 ```python
 	1. No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.
@@ -55,7 +55,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 <details><summary> Instalação do módulo D-Server </summary>
 <p>
 
-####  Download D-Server 
+#### Download D-Server!
 
 ```python
 	1. No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.
@@ -76,7 +76,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 <details><summary> Instalação do módulo DSWeb </summary>
 <p>
 
-####  Download DSWeb 
+#### Download DSWeb!
 
 ```python
 	1. No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.
@@ -107,7 +107,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 <details><summary> Instalação do NodeJS v10+ </summary>
 <p>
 
-####  Download NodeJS v10+ 
+#### Download NodeJS v10+!
 
 ```python
 	1. No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.
