@@ -17,7 +17,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 ### Instalação e configuração dos Pré-Requisitos (software) 
 
 
-<details><summary> Instalação do PostgreSQL 9.4+ </summary>
+<details><summary> Instalação do PostgreSQL 9.4+ </summary> </br>
 <h5 style="margin-left: 30px;"> Download PostgreSQL 9.4! </h5>
 <p>
 <ol>
