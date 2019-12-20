@@ -21,7 +21,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 	<p>
 	 <h5 style="margin-left: 30px;">Download PostgreSQL 9.4</h5>
 		<ol>
-			<li> No arquivo baixado acima, encontra-se o instalador, manual de instalação e configuração.</li>
+			<li> No arquivo para download acima, encontra-se o instalador, manual de instalação e configuração.</li>
 			<li> Install postgres, remove flag "launch stack Builder at exit?"</li>
 			<li> Criar banco de dados</li>
 			 <li>  Criar table space com nome WTTDSERVER, apontando para o diretório DB do dserver ex. C:\WTT\dserver\Db</li>
@@ -36,7 +36,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 	<p>
 	 <h5 style="margin-left: 30px;">Download ODBC</h5>
 		<ol>
-			<li> No arquivo baixado acima, encontra-se o instalador, manual de instalação e configuração.</li>
+			<li> No arquivo para download acima, encontra-se o instalador, manual de instalação e configuração.</li>
 			<li> Efetue a instalação do ODBC.</li>
 			<li> Configure ODBC, adicionando Postgres ANSI e configurando conexão com Dserver</li>
 		</ol>
@@ -49,7 +49,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 	<p>
 	 <h5 style="margin-left: 30px;">Download D-Server</h5>
 		<ol>
-			<li> No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração.</li>
+			<li> No arquivo para download acima, encontra-se o instalador e manual de instalação e configuração.</li>
 			<li> Criar pasta "WTT" na raiz do diretório desejado.</li>
 			<li> Copiar pasta dserver para dentro da pasta WTT, criada anteriormente.</li>
 			<li> Configurar dserver.</li>
@@ -67,7 +67,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 	<p>
 	 <h5 style="margin-left: 30px;"> Download DSWeb </h5>
 		<ol>
-			<li> No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração. </li>
+			<li> No arquivo para download acima, encontra-se o instalador e manual de instalação e configuração. </li>
 			<li> Ativar IIS. </li>
 			<li> Instalar urlrewrite2.exe. </li>
 			<li> Configurar IIS. </li>
@@ -89,13 +89,21 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 	<p>
 	 <h5 style="margin-left: 30px;"> Download NodeJS v10+ </h5>
 		<ol>
-			<li> No arquivo baixado acima, encontra-se o instalador e manual de instalação e configuração. </li>
+			<li> No arquivo para download acima, encontra-se o instalador e manual de instalação e configuração. </li>
 			<li> Executar o instalado em modo ADM. </li>
 		</ol>
 	</p>
 </details>
 
 
+<details><summary> Artefatos de Testes </summary>
+	<p>
+	 <h5 style="margin-left: 30px;"> Download Artefatos de Testes </h5>
+		<ol>
+			<li> No arquivo para download acima, encontra-se artefatos para apoiar os testes pós instalação. </li>
+		</ol>
+	</p>
+</details>
 
 _ _
 
