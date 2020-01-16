@@ -29,7 +29,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 			<li> Extrair do arquivo compactado a pasta "dserver", colocando-a dentro da pasta WTT, criada anteriormente. (exemplo: D:\WTT\dserver).</li>
 			<li> Executar o programa como Administrador "WTTdserverSvc.exe" dentro da pasta \\wtt\dserver\prg </li>
 			<ul>
-				<li style="color:red;"> ! Caso apresente erro "Run-time error 70 - Permission denied", copie os arquivos localizado na pasta System32 (\WTT\dserver\SYSTEM32) e cole na pasta C:\Windows\SysWOW64 (caso seja windows 64bits), abra o Prompt de comando em modo administrador e utilize os comandos abaixo para registrar as DLLs: 
+				<li> ! Caso apresente erro "Run-time error 70 - Permission denied", copie os arquivos localizado na pasta System32 (\WTT\dserver\SYSTEM32) e cole na pasta C:\Windows\SysWOW64 (caso seja windows 64bits), abra o Prompt de comando em modo administrador e utilize os comandos abaixo para registrar as DLLs: 
 					<li> C:\Windows\SysWOW64>regsvr32 MSCOMCTL.OCX </li>
 					<li> C:\Windows\SysWOW64>regsvr32 MSSTDFMT.DLL </li>
 				    <li> C:\Windows\SysWOW64>regsvr32 NTSVC.ocx </li>
@@ -92,6 +92,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 	 </h5>
 		<ol>
 			<li> No arquivo baixado do link acima, encontra-se o instalador e manual de instalação e configuração. </li>
+			<li> Extraia o arquivo compactado na pasta Suporte (exemplo: D:\WTT\suporte\DsWeb).</li>
 			<li> Installar o IIS em recursos do windows e garantir que a opção CGI esteja marcada. (IIS > Serviços da World Wide Web > Recursos de Desenvolvimento de Aplicativos > CGI). </li>
 			<li> Criar o usuário wttservice (local) em gerenciamento do computador e definir com perfil de administrador. </li>
 			<li> Na raiz do IIS (primeiro item da coluna esquerda), seleciona "Restrições ISAPI e CGI" e clica em "Editar configurações de recurso" e marca a opção: Permitir módulos CGI não especificado. </li>
@@ -112,7 +113,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 				<li> - Clique em “Add...” e preencha os seguintes campos: </li>
 				<li> - Check if input string: Is Not a File </li>
 				<li> - Condition input: {REQUEST_FILENAME}</li>
-				<li style="color:red;"> - Atenção: se a opção “Is Not a File” não estiver aparecendo, confira se na instalação do IIS foi adicionada a opção “ASP” ou “ASP.net”. </li>
+				<li> - Atenção: se a opção “Is Not a File” não estiver aparecendo, confira se na instalação do IIS foi adicionada a opção “ASP” ou “ASP.net”. </li>
 				<li> - Clique em “OK” para salvar e fechar a condição criada. </li>
 				<li> - Expanda a sessão “Action” e preencha os seguintes campos: </li>
 				<li> - Action type: Rewrite </li>
