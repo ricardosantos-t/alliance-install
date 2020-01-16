@@ -29,7 +29,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 			<li> Extrair do arquivo compactado a pasta "dserver", colocando-a dentro da pasta WTT, criada anteriormente. (exemplo: D:\WTT\dserver).</li>
 			<li> Executar o programa como Administrador "WTTdserverSvc.exe" dentro da pasta \\wtt\dserver\prg </li>
 			<ul>
-				<li> ! Caso apresente erro "Run-time error 70 - Permission denied", copie os arquivos localizado na pasta System32 (\WTT\dserver\SYSTEM32) e cole na pasta C:\Windows\SysWOW64 (caso seja windows 64bits), abra o Prompt de comando em modo administrador e utilize os comandos abaixo para registrar as DLLs: 
+				<li style="color:red;"> ! Caso apresente erro "Run-time error 70 - Permission denied", copie os arquivos localizado na pasta System32 (\WTT\dserver\SYSTEM32) e cole na pasta C:\Windows\SysWOW64 (caso seja windows 64bits), abra o Prompt de comando em modo administrador e utilize os comandos abaixo para registrar as DLLs: 
 					<li> C:\Windows\SysWOW64>regsvr32 MSCOMCTL.OCX </li>
 					<li> C:\Windows\SysWOW64>regsvr32 MSSTDFMT.DLL </li>
 				    <li> C:\Windows\SysWOW64>regsvr32 NTSVC.ocx </li>
@@ -95,7 +95,9 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 			<li> Extraia o arquivo compactado na pasta Suporte (exemplo: D:\WTT\suporte\DsWeb).</li>
 			<li> Installar o IIS em recursos do windows e garantir que a opção CGI esteja marcada. (IIS > Serviços da World Wide Web > Recursos de Desenvolvimento de Aplicativos > CGI). </li>
 			<li> Criar o usuário wttservice (local) em gerenciamento do computador e definir com perfil de administrador. </li>
-			<li> Na raiz do IIS (primeiro item da coluna esquerda), seleciona "Restrições ISAPI e CGI" e clica em "Editar configurações de recurso" e marca a opção: Permitir módulos CGI não especificado. </li>
+			<li> Abra o IIS, na raiz do mesmo (primeiro item da coluna esquerda), seleciona "Restrições ISAPI e CGI" e clica em "Editar configurações de recurso" e marca a opção: Permitir módulos CGI não especificado. </li>
+			<li> Default Web Site ( adicionar novo diretório virtual > Alias: STORAGE, Caminho fisico "c:\WTT\storage"´> conectar como: selecionar usuário WTTService  ) </li>
+			<li> Default Web Site > Storage ( selecionar Tipos de MIME e adicionar extenção .dat (binary/dat), .dcm (binary/dcm) ) </li>
 			<li> Execute como Administrador o arquivo “headers.cmd”. Esse arquivo adicionará no diretório virtual STORAGE, uma configuração dentro de “Cabeçalhos de Resposta HTTP”.</li>
 			<li> Execute como Administrador o instalador "urlrewrite2.exe". </li>
 			<li> No IIS "Default Web Site" criar diretório virtual “DSWEB”  (adicionar novo diretório virtual > Alias: “DSWEB”, Caminho fisico "c:\WTT\Dserver\Web"´> conectar como: selecionar usuário WTTService). </li>
@@ -124,8 +126,6 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 				<li> - http://localhost:porta/DsWeb/version ou http://IP_SERVIDOR:PORTA/DsWeb/version.  No Chrome e no Firefox, deve exibir uma página com a versão do DsWeb. No Internet Explorer, deve exibir uma mensagem perguntando se deseja salvar o arquivo “version.json”. Salve o arquivo e abra com o bloco de notas, o conteúdo deve ser um texto mostrando a versão do DsWeb. </li>
 				</ul>
 			</li>
-			<li> Default Web Site ( adicionar novo diretório virtual > Alias: STORAGE, Caminho fisico "c:\WTT\storage"´> conectar como: selecionar usuário WTTService  ) </li>
-			<li> Default Web Site > Storage ( selecionar Tipos de MIME e adicionar extenção .dat (binary/dat), .dcm (binary/dcm) ) </li>
 			<li> Teste: http://127.0.0.1/dsweb/version (Deve apresentar a versão do dsweb) </li>
 		</ol>
 	</p>
