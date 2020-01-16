@@ -28,11 +28,14 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 			<li> Crie uma pasta "WTT" na raiz do diretório local com maior espaço (exemplo: D:\WTT).</li>
 			<li> Extrair do arquivo compactado a pasta "dserver", colocando-a dentro da pasta WTT, criada anteriormente. (exemplo: D:\WTT\dserver).</li>
 			<li> Executar o programa como Administrador "WTTdserverSvc.exe" dentro da pasta \\wtt\dserver\prg </li>
-			<li> ! Caso apresente erro "Run-time error 70 - Permission denied", copie os arquivos localizado na pasta System32 (\WTT\dserver\SYSTEM32) e cole na pasta C:\Windows\SysWOW64 (caso seja windows 64bits), abra o Prompt de comando em modo administrador e utilize os comandos abaixo para registrar as DLLs: 
-			`> C:\Windows\SysWOW64>regsvr32 MSCOMCTL.OCX `
-			`> C:\Windows\SysWOW64>regsvr32 MSSTDFMT.DLL `
-		    `> C:\Windows\SysWOW64>regsvr32 NTSVC.ocx `
-		  	`> C:\Windows\SysWOW64>regsvr32 tabctl32.ocx ` </li>
+			<ul>
+				<li> ! Caso apresente erro "Run-time error 70 - Permission denied", copie os arquivos localizado na pasta System32 (\WTT\dserver\SYSTEM32) e cole na pasta C:\Windows\SysWOW64 (caso seja windows 64bits), abra o Prompt de comando em modo administrador e utilize os comandos abaixo para registrar as DLLs: 
+					<li> C:\Windows\SysWOW64>regsvr32 MSCOMCTL.OCX </li>
+					<li> C:\Windows\SysWOW64>regsvr32 MSSTDFMT.DLL </li>
+				    <li> C:\Windows\SysWOW64>regsvr32 NTSVC.ocx </li>
+				  	<li> C:\Windows\SysWOW64>regsvr32 tabctl32.ocx </li>
+			  	</li>
+		  	</ul>
 			<li> Na aba configurações (user: admin, Key: wttsolution) > avançado > clique em; Instalar serviço.</li>
 			<li> Ativar Dserver.</li>
 			<li> Na aba configurações (user: admin, Key: wttsolution) > Servidor > Marcar flag "habilitar importação de arquivos dicom".</li>
@@ -97,26 +100,29 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 			<li> No IIS "Default Web Site" criar diretório virtual “DSWEB”  (adicionar novo diretório virtual > Alias: “DSWEB”, Caminho fisico "c:\WTT\Dserver\Web"´> conectar como: selecionar usuário WTTService). </li>
 			<li> Dentro do diretório virtual DSWEB, abra a opção “Mapeamentos de Manipulador” e clique em “Editar permissões de recurso”. Adicione a permissão “Executar”. </li>
 			<li> Dentro do diretório virtual DSWEB, abra a opção “URL Rewrite” > Add Rule(s)... 
-				> Inbound rules - Blank rule - Preencha os seguintes campos: 
-				- Name: DsWeb.exe 
-				- Requested URL: Matches the Pattern 
-				- Using: Regular Expressions 
-				- Pattern: .* 
-				- Ignore case: habilitado 
-				- Expanda a sessão “Conditions” e preencha o seguinte campo:
-				- Logical grouping: Match Any 
-				- Clique em “Add...” e preencha os seguintes campos: 
-				- Check if input string: Is Not a File 
-				- Condition input: {REQUEST_FILENAME}
-				- Atenção: se a opção “Is Not a File” não estiver aparecendo, confira se na instalação do IIS foi adicionada a opção “ASP” ou “ASP.net”. 
-				- Clique em “OK” para salvar e fechar a condição criada. 
-				- Expanda a sessão “Action” e preencha os seguintes campos: 
-				- Action type: Rewrite 
-				- Rewrite URL: DsWeb.exe/{R:0} 
-				- Append query string: habilitado 
-				- Clique em “Aplicar” no menu do lado direito para salvar a regra. 
-				- Para verificar se o diretório virtual foi criado corretamente e está acessível, acesse o seguinte endereço no navegador:  http://localhost:porta/DsWeb/version ou http://IP_SERVIDOR:PORTA/DsWeb/version.  No Chrome e no Firefox, deve exibir uma página com a versão do DsWeb. No Internet Explorer, deve exibir uma mensagem perguntando se deseja salvar o arquivo “version.json”. Salve o arquivo 
-				e abra com o bloco de notas, o conteúdo deve ser um texto mostrando a versão do DsWeb. 
+				<ul>
+				<li> Inbound rules - Blank rule - Preencha os seguintes campos: </li>
+				<li> - Name: DsWeb.exe </li>
+				<li> - Requested URL: Matches the Pattern </li>
+				<li> - Using: Regular Expressions </li>
+				<li> - Pattern: .* </li>
+				<li> - Ignore case: habilitado </li>
+				<li> - Expanda a sessão “Conditions” e preencha o seguinte campo: </li>
+				<li> - Logical grouping: Match Any </li>
+				<li> - Clique em “Add...” e preencha os seguintes campos: </li>
+				<li> - Check if input string: Is Not a File </li>
+				<li> - Condition input: {REQUEST_FILENAME}</li>
+				<li> - Atenção: se a opção “Is Not a File” não estiver aparecendo, confira se na instalação do IIS foi adicionada a opção “ASP” ou “ASP.net”. </li>
+				<li> - Clique em “OK” para salvar e fechar a condição criada. </li>
+				<li> - Expanda a sessão “Action” e preencha os seguintes campos: </li>
+				<li> - Action type: Rewrite </li>
+				<li> - Rewrite URL: DsWeb.exe/{R:0} </li>
+				<li> - Append query string: habilitado </li>
+				<li> - Clique em “Aplicar” no menu do lado direito para salvar a regra. </li>
+				<li> - Para verificar se o diretório virtual foi criado corretamente e está acessível, acesse o seguinte endereço no navegador:  </li>
+				<li> - http://localhost:porta/DsWeb/version ou http://IP_SERVIDOR:PORTA/DsWeb/version.  No Chrome e no Firefox, deve exibir uma página com a versão do DsWeb. No Internet Explorer, deve exibir uma mensagem perguntando se deseja salvar o arquivo “version.json”. Salve o arquivo e abra com o bloco de notas, o conteúdo deve ser um texto mostrando a versão do DsWeb. </li>
+				</ul>
+			</li>
 			<li> Default Web Site ( adicionar novo diretório virtual > Alias: STORAGE, Caminho fisico "c:\WTT\storage"´> conectar como: selecionar usuário WTTService  ) </li>
 			<li> Default Web Site > Storage ( selecionar Tipos de MIME e adicionar extenção .dat (binary/dat), .dcm (binary/dcm) ) </li>
 			<li> Teste: http://127.0.0.1/dsweb/version (Deve apresentar a versão do dsweb) </li>
