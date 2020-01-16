@@ -36,9 +36,9 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 				  	<li> C:\Windows\SysWOW64>regsvr32 tabctl32.ocx </li>
 			  	</li>
 		  	</ul>
-			<li> Na aba configurações (user: admin, Key: wttsolution) > avançado > clique em; Instalar serviço.</li>
+			<li> Na aba configurações > avançado > clique em; Instalar serviço.</li>
 			<li> Ativar Dserver.</li>
-			<li> Na aba configurações (user: admin, Key: wttsolution) > Servidor > Marcar flag "habilitar importação de arquivos dicom".</li>
+			<li> Na aba configurações > Servidor > Marcar flag "habilitar importação de arquivos dicom".</li>
 			<li> Na raiz da pasta "WTT", crie uma pasta "storage" dentro dela crie uma pasta "dcmimport" (exemplo: C:\WTT\storage\dcmimport).</li>
 			<li> Instale o Postgres conforme tópico abaixo..</li>
 		</ol>
