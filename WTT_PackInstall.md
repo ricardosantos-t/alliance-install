@@ -98,8 +98,8 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 			<li> Abra o IIS, na raiz do mesmo (primeiro item da coluna esquerda), seleciona "Restrições ISAPI e CGI" e clica em "Editar configurações de recurso" e marca a opção: Permitir módulos CGI não especificado. </li>
 			<li> Default Web Site ( adicionar novo diretório virtual > Alias: STORAGE, Caminho fisico "c:\WTT\storage"´> conectar como: selecionar usuário WTTService  ) </li>
 			<li> Default Web Site > Storage ( selecionar Tipos de MIME e adicionar extenção .dat (binary/dat), .dcm (binary/dcm) ) </li>
-			<li> Execute como Administrador o arquivo “headers.cmd”. Esse arquivo adicionará no diretório virtual STORAGE, uma configuração dentro de “Cabeçalhos de Resposta HTTP”.</li>
-			<li> Feche a janela do IIS e execute como Administrador o instalador "urlrewrite2.exe". </li>
+			<li> Execute como Administrador o arquivo “headers.cmd”, baixado anteriormente e extraído na pasta suporte (exemplo: D:\WTT\suporte\DsWeb). Esse arquivo adicionará no diretório virtual STORAGE, uma configuração dentro de “Cabeçalhos de Resposta HTTP”.</li>
+			<li> Feche a janela do IIS e execute como Administrador o instalador "urlrewrite2.exe", baixado anteriormente e extraído na pasta suporte (exemplo: D:\WTT\suporte\DsWeb) . </li>
 			<li> Abra novamente o IIS, em "Default Web Site" criar diretório virtual “DSWEB”  (adicionar novo diretório virtual > Alias: “DSWEB”, Caminho fisico "c:\WTT\Dserver\Web"´> conectar como: selecionar usuário WTTService). </li>
 			<li> Dentro do diretório virtual DSWEB, abra a opção “Mapeamentos de Manipulador” e clique em “Editar permissões de recurso”. Adicione a permissão “Executar”. </li>
 			<li> Dentro do diretório virtual DSWEB, abra a opção “URL Rewrite” > Add Rule(s)... 
