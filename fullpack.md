@@ -40,7 +40,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 			<li> Ativar Dserver.</li>
 			<li> Na aba configurações (user: admin, Key: wttsolution) > Servidor > Marcar flag "habilitar importação de arquivos dicom".</li>
 			<li> Na raiz da pasta "WTT", crie uma pasta "storage" dentro dela crie uma pasta "dcmimport" (exemplo: C:\WTT\storage\dcmimport).</li>
-			<li> Instale o Postgres e retorne ao D-Server para configurar a comunicação com o banco de dados.</li>
+			<li> Instale o Postgres conforme tópico abaixo..</li>
 		</ol>
 	</p>
 </details>
