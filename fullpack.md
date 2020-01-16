@@ -18,7 +18,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 
 
 
-<details><summary> Instalação do módulo D-Server </summary>
+<details><summary> Instalação do módulo D-Server v1.4.3 </summary>
 	<p>
 	 <h5 style="margin-left: 30px;" font size="14px">
 	 	<a href="https://s3-sa-east-1.amazonaws.com/wtt-lite-image-0.5/D-Server.zip"><b>Download D-Server</b></a>
