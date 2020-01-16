@@ -58,7 +58,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 			<li> Execute como Administrador o instalador "postgresql-9.4.5-1-windows-x64.exe" e na última tela, remova a flag "launch stack Builder at exit?" apresentada no final da instalação </li>
 			<li> Abrir Pagadmim, clique em PostgreSQL, informe a senha criada anteriormente.</li>
 			<li> Crie table space com nome "WTTDSERVER", Owner "postgres", na aba Definition informe o diretório DB do dserver (exemplo: C:\WTT\dserver\Db).</li>
-			<li> Crie Database com nome "WTTDSERVER", Owner "postgres", em Definition seleciona a table space "WTTDSERVER", na aba Variables Selecione standard_conforming_strings, marca o box "Variable value"e clica em ADD/change, clicar em ok.</li>
+			<li> Crie Database com nome "WTTDSERVER", Owner "postgres", em Definition seleciona a table space "WTTDSERVER", na aba Variables em variables name, Selecione "standard_conforming_strings", marca o box "Variable value"e clica em ADD/change, clicar em ok.</li>
 			<li> Selecione a Database "WTTDSERVER", clique em SQL, informe o script padrão do banco de dados (.txt disponibilizado no arquivo baixado), e clique em "execute query" (botão play).</li>
 			<li> Instale o ODBC (disponibilizado abaixo) e efetue a configuração. </li>
 		</ol>
@@ -77,7 +77,6 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 			<li> Extraia o arquivo compactado na pasta Suporte (exemplo: D:\WTT\suporte\ODBC).</li>
 			<li> Execute como Administrador o instalador "psqlodbc-setup.exe".</li>
 			<li> Abra o ODBC, na aba "DNS de Sistema" clique em adincionar > selecione PostgreSQL ANSI e configure os dados referente as tabelas WTTDSERVER.</li>
-			<li> Reinicie a maquina. </li>
 			<li> Configure no D-Server o banco de dados criado, seguindo manual de configuração do do D-Server</li>
 		</ol>
 	</p> 
@@ -93,7 +92,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 		<ol>
 			<li> No arquivo baixado do link acima, encontra-se o instalador e manual de instalação e configuração. </li>
 			<li> Extraia o arquivo compactado na pasta Suporte (exemplo: D:\WTT\suporte\DsWeb).</li>
-			<li> Installar o IIS em recursos do windows e garantir que a opção CGI esteja marcada. (IIS > Serviços da World Wide Web > Recursos de Desenvolvimento de Aplicativos > CGI). </li>
+			<li> Installar o IIS em recursos do windows e garantir que a opção CGI e asp.net 4.7 ou superior estejam marcados. (IIS > Serviços da World Wide Web > Recursos de Desenvolvimento de Aplicativos > asp.net 4.7 e logo abaixo tem CGI ). </li>
 			<li> Criar o usuário wttservice (local) em gerenciamento do computador e definir com perfil de administrador. </li>
 			<li> Abra o IIS, na raiz do mesmo (primeiro item da coluna esquerda), seleciona "Restrições ISAPI e CGI" e clica em "Editar configurações de recurso" e marca a opção: Permitir módulos CGI não especificado. </li>
 			<li> Default Web Site ( adicionar novo diretório virtual > Alias: STORAGE, Caminho fisico "c:\WTT\storage"´> conectar como: selecionar usuário WTTService  ) </li>
@@ -123,10 +122,9 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 				<li> - Append query string: habilitado </li>
 				<li> - Clique em “Aplicar” no menu do lado direito para salvar a regra. </li>
 				<li> - Para verificar se o diretório virtual foi criado corretamente e está acessível, acesse o seguinte endereço no navegador:  </li>
-				<li> - http://localhost:porta/DsWeb/version ou http://IP_SERVIDOR:PORTA/DsWeb/version.  No Chrome e no Firefox, deve exibir uma página com a versão do DsWeb. No Internet Explorer, deve exibir uma mensagem perguntando se deseja salvar o arquivo “version.json”. Salve o arquivo e abra com o bloco de notas, o conteúdo deve ser um texto mostrando a versão do DsWeb. </li>
+				<li> - http://localhost:porta/DsWeb/version ou http://IP_SERVIDOR:PORTA/DsWeb/version. (exemplo: http://127.0.0.1/dsweb/version) No Chrome e no Firefox, deve exibir uma página com a versão do DsWeb. No Internet Explorer, deve exibir uma mensagem perguntando se deseja salvar o arquivo “version.json”. Salve o arquivo e abra com o bloco de notas, o conteúdo deve ser um texto mostrando a versão do DsWeb. </li>
 				</ul>
 			</li>
-			<li> Teste: http://127.0.0.1/dsweb/version (Deve apresentar a versão do dsweb) </li>
 		</ol>
 	</p>
 </details>
