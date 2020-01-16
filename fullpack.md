@@ -174,7 +174,7 @@ Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para ini
 
 
 1. Faça o download da versão mais recente (preferencialmente partial).
-2. Extraia o arquivo no local com maior espaço (exemplo: D:\WTT\Alliance\lite-image).
+2. Extraia o arquivo no local com maior espaço (exemplo: D:\WTT\LiteImage_0.5.4).
 3. Entre na pasta extraída através do **prompt de comando (modo administador)**.
 4. Execute o comando: `> node -v` se a versão do nodejs não for exibida, significa que o NodeJS ainda não foi instalado, então baixe ele [aqui](https://nodejs.org/dist/v12.13.1/node-v12.13.1-x64.msi) e prossiga com a instalação do NodeJS.
 5. Repita o passo 4 para certificar que o NodeJS esteja realmente pronto para ser usado.
