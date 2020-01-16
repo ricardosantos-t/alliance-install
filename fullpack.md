@@ -170,7 +170,7 @@ Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para ini
 
 | Versões | Descrição | Download | Releases
 |:-------------|:------------------|:----------------|:----------------|
-| 0.5.4 - Partial | Requer internet (recomendado) | [Baixar](https://github.com/WTT-TECNOLOGIA/alliance-install/blob/master/wtt-alliance-lite-image-v0.5.4.zip?raw=true) | .... |
+| 0.5.4 - Partial | Requer internet (recomendado) | [Baixar](https://s3-sa-east-1.amazonaws.com/wtt-lite-image-0.5/LiteImage_0.5.4.zip) | .... |
 
 
 1. Faça o download da versão mais recente (preferencialmente partial).
