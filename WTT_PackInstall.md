@@ -115,7 +115,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 				<li> - Clique em “Add...” e preencha os seguintes campos: </li>
 				<li> - Check if input string: Is Not a File </li>
 				<li> - Condition input: {REQUEST_FILENAME}</li>
-				<li> - Atenção: se a opção “Is Not a File” não estiver aparecendo, confira se na instalação do IIS foi adicionada a opção “ASP” ou “ASP.net”. </li>
+				<li style="color:red;"> - Atenção: se a opção “Is Not a File” não estiver aparecendo, confira se na instalação do IIS foi adicionada a opção “ASP” ou “ASP.net”. </li>
 				<li> - Clique em “OK” para salvar e fechar a condição criada. </li>
 				<li> - Expanda a sessão “Action” e preencha os seguintes campos: </li>
 				<li> - Action type: Rewrite </li>
@@ -139,8 +139,9 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 		 <a href="https://s3-sa-east-1.amazonaws.com/wtt-lite-image-0.5/NodeJs.zip"><b>Download NodeJS v10+</b></a>
 	 </h5>
 		<ol>
-			<li> No arquivo baixado do link acima, encontra-se o instalador e manual de instalação e configuração. </li>
-			<li> Executar o instalado em modo ADM. </li>
+			<li> Baixe o arquivo utilizando o link acima. </li>
+			<li> Extraia o arquivo compactado na pasta Suporte (exemplo: D:\WTT\suporte\NodeJs).</li>
+			<li> Executar o instalador. </li>
 		</ol>
 	</p>
 </details>
@@ -154,6 +155,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 	 </h5>
 		<ol>
 			<li> No arquivo baixado do link acima, encontra-se artefatos para apoiar os testes pós instalação. </li>
+			<li> Extraia o arquivo compactado na pasta Suporte (exemplo: D:\WTT\suporte\Massa de Testes).</li>
 		</ol>
 	</p>
 </details>
