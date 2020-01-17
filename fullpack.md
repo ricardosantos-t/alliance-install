@@ -188,6 +188,9 @@ Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para ini
 - NetworkID da instituição - alterar diretamente na tabela "ali_sites".
 - URL de apontamento para o DSWEB - Disponível em configurações do site, refletindo na tabela "ali_site_configurations".
 - Definir data de início da importação (importante) - Disponível em configurações do site, refletindo na tabela "ali_site_configurations".
+13. Garantir que as portas utilizadas pela aplicação e dsweb estejam liberadas no firewall do windows "
+
+ 	
 
 
 _ _
