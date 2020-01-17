@@ -2,7 +2,7 @@
 
 Essa página tem por objetivo, descrever os pré-requisitos e apoiar no processo de instalação do módulo **WTT Alliance - Lite Image v0.5**.
 
-Documentação: https://wtt-tecnologia.github.io/alliance-install/fullpack
+Documentação: https://wtt-tecnologia.github.io/alliance-install/
 
 ### Pré-Requisitos (mínimo de hardware)
 - SO: Windows 7 PRO ou superior
@@ -175,9 +175,9 @@ Uma vez que os pré-requisitos estejam atendidos, siga os passos abaixo para ini
 
 1. Faça o download da versão mais recente (preferencialmente partial).
 2. Extraia o arquivo no local com maior espaço (exemplo: D:\WTT\LiteImage_0.5.4).
-3. Entre na pasta extraída através do **prompt de comando (modo administador)**.
-4. Execute o comando: `> node -v` se a versão do nodejs não for exibida, significa que o NodeJS ainda não foi instalado, então baixe ele [aqui](https://nodejs.org/dist/v12.13.1/node-v12.13.1-x64.msi) e prossiga com a instalação do NodeJS.
-5. Repita o passo 4 para certificar que o NodeJS esteja realmente pronto para ser usado.
+3. Execute o comando: `> node -v` se a versão do nodejs não for exibida, significa que o NodeJS ainda não foi instalado, então baixe ele [aqui](https://nodejs.org/dist/v12.13.1/node-v12.13.1-x64.msi) e prossiga com a instalação do NodeJS.
+4. Repita o passo 3 para certificar que o NodeJS esteja realmente pronto para ser usado.
+5. Entre na pasta extraída através do **prompt de comando (modo administador)**.
 6. Ainda na pasta extraída, execute o comando `> npm install` para baixar e/ou atualizar as dependências do sistema, nesse momento você deverá ter internet disponível, caso contrário utilize a versão "full" do instalador (recomendamos a versão partial).
 7. Ainda na pasta extraída, renomeie o arquivos **configuration-sample.json** para **configuration.json** e edite esse arquivo, aqui você poderá modificar a porta de execução e conexões com banco de dados da aplicação e dserver, altere os valores conforme necessário, salve e feche o arquivo.
 8. Ainda na pasta extraída, execute o comando `> node server --install` um serviço (WTT Alliance - Lite Image v0.5), será instalado no windows e iniciado, caso o banco de dados não exista ele será criado e a aplicação será carregada no browser.
