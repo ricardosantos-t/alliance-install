@@ -18,7 +18,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 
 
 
-<details><summary> Instalação do módulo D-Server v1.4.3 </summary>
+<details><summary> D-Server v1.4.3 </summary>
 	<p>
 	 <h5 style="margin-left: 30px;" font size="14px">
 	 	<a href="https://s3-sa-east-1.amazonaws.com/wtt-lite-image-0.5/D-Server.zip"><b>Download D-Server</b></a>
@@ -47,7 +47,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 
 
 
-<details><summary> Instalação do PostgreSQL 9.4+ </summary>
+<details><summary> PostgreSQL 9.4+ </summary>
 	<p>
 	 <h5 style="margin-left: 30px;" font size="14px">
 	 	<a href="https://s3-sa-east-1.amazonaws.com/wtt-lite-image-0.5/Postgres.zip"><b>Download PostgreSQL 9.4</b></a>
@@ -67,7 +67,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 
 
 
-<details><summary> Instalação do ODBC </summary>
+<details><summary> ODBC </summary>
 	<p>
 	 <h5 style="margin-left: 30px;" font size="14px">
 	 	<a href="https://s3-sa-east-1.amazonaws.com/wtt-lite-image-0.5/ODBC.zip"><b>Download ODBC</b></a>
@@ -84,7 +84,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 
 
 
-<details><summary> Instalação do módulo DSWeb </summary>
+<details><summary> DSWeb </summary>
 	<p>
 	 <h5 style="margin-left: 30px;" font size="14px">
 	 	<a href="https://s3-sa-east-1.amazonaws.com/wtt-lite-image-0.5/DsWeb.zip"><b>Download DSWeb</b></a>
@@ -131,7 +131,7 @@ Documentação: https://wtt-tecnologia.github.io/alliance-install/
 
 
 
-<details><summary> Instalação do NodeJS v10+ </summary>
+<details><summary> NodeJS v10+ </summary>
 	<p>
 	 <h5 style="margin-left: 30px;" font size="14px">
 		 <a href="https://s3-sa-east-1.amazonaws.com/wtt-lite-image-0.5/NodeJs.zip"><b>Download NodeJS v10+</b></a>
